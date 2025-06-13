@@ -88,23 +88,9 @@ import { css } from "styled-components/macro"; //eslint-disable-line
 // import SaaSProductLandingPage from "demos/SaaSProductLandingPage.js";
 // import RestaurantLandingPage from "demos/RestaurantLandingPage.js";
 // import ServiceLandingPage from "demos/ServiceLandingPage.js";
-// import HostingCloudLandingPage from "demos/HostingCloudLandingPage.js";
+import HostingCloudLandingPage from "demos/HostingCloudLandingPage.js";
 
-/* Inner Pages */
-// import LoginPage from "pages/Login.js";
-// import SignupPage from "pages/Signup.js";
-// import PricingPage from "pages/Pricing.js";
-// import AboutUsPage from "pages/AboutUs.js";
-// import ContactUsPage from "pages/ContactUs.js";
-// import BlogIndexPage from "pages/BlogIndex.js";
-// import TermsOfServicePage from "pages/TermsOfService.js";
-// import PrivacyPolicyPage from "pages/PrivacyPolicy.js";
 
-import ComponentRenderer from "ComponentRenderer.js";
-import MainLandingPage from "MainLandingPage.js";
-import ThankYouPage from "ThankYouPage.js";
-
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
 export default function App() {
   // If you want to disable the animation just use the disabled `prop` like below on your page's component
@@ -114,33 +100,8 @@ export default function App() {
   return (
     <>
       <GlobalStyles />
-      <Router>
-        <Routes>
-          <Route path="/components/:type/:subtype/:name" element={<ComponentRenderer />} />
-          <Route path="/components/:type/:name" element={<ComponentRenderer />} />
-          <Route path="/thank-you" element={<ThankYouPage />} />
-          <Route path="/" element={<MainLandingPage />} />
-        </Routes>
-      </Router>
+      <HostingCloudLandingPage />
     </>
   );
 }
 
-// export default EventLandingPage;
-// export default HotelTravelLandingPage;
-// export default AgencyLandingPage;
-// export default SaaSProductLandingPage;
-// export default RestaurantLandingPage;
-// export default ServiceLandingPage;
-// export default HostingCloudLandingPage;
-
-// export default LoginPage;
-// export default SignupPage;
-// export default PricingPage;
-// export default AboutUsPage;
-// export default ContactUsPage;
-// export default BlogIndexPage;
-// export default TermsOfServicePage;
-// export default PrivacyPolicyPage;
-
-// export default MainLandingPage;
